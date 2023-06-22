@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+        font-family: 'Oswald', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group input[type="date"] {
+      width: 97%;
+      padding: 8px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+    }
+
+    .form-group input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #cccccc;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn {
+        font-family: 'Oswald', sans-serif;
+        font-size: large;
+        font-weight: 400;
+
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-center a {
+      color: grey;
+      text-decoration: none;
+    }
+
+    .text-center a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media Queries */
+    @media only screen and (min-width: 768px) {
+      .container {
+        max-width: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <center>
+            <h1>FINTECH</h1>
+            <p>Suas finanças na palma da sua mão</p>
+        </center>
+    </div>
+  <div class="container">
+    <h2>Cadastre-se</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">CRIE UMA SENHA:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="birthdate">DATA DE NASCIMENTO:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" maxlength="11" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn" value="ACESSAR">
+      </div>
+    </form>
+    <p class="text-center">Já possui conta? <a href="#">Sign In</a></p>
+  </div>
+</body>
+</html>
